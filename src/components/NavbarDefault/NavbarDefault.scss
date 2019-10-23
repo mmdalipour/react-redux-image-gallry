@@ -1,0 +1,29 @@
+$brand-color: #272727;
+$brand-font-family: 'Big Shoulders Text', cursive;
+$brand-font-size: 2rem;
+$brand-font-size-sm: calc(0.5rem + 3vw);
+$brand-font-weight: 400;
+$brand-letter-spacing-sm: 0;
+$brand-letter-spacing: 0.25rem;
+
+.navbar-brand {
+    font-family: $brand-font-family;
+    font-size: $brand-font-size-sm;
+    color: $brand-color;
+    font-weight: $brand-font-weight;
+    letter-spacing: $brand-letter-spacing-sm;
+}
+
+.navbar-brand span {
+    font-size: $brand-font-size-sm;
+}
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-size: $brand-font-size;
+        letter-spacing: $brand-letter-spacing;
+    }
+    .navbar-brand span {
+        font-size: $brand-font-size;
+    }
+}

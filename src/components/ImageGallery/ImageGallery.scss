@@ -1,0 +1,76 @@
+$column-gutter: 1rem;
+$user-font-family: "Big Shoulders Text", cursive;
+
+$image-box-backgroud-color: #c3c3c3;
+$image-box-height: 500px;
+$image-box-width: 100%;
+$image-box-border-radius: 0.5rem;
+
+.image-container {
+  display: table;
+}
+
+.image-box {
+  background-color: $image-box-backgroud-color;
+  position: relative;
+  width: $image-box-width;
+  height: $image-box-height;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: $image-box-border-radius;
+}
+
+.author-image {
+  background-color: #c3c3c3;
+}
+
+.image-box .image-overlay {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-box:hover .image-overlay,
+.image-box:hover .image-content {
+  opacity: 0.85;
+}
+
+.like-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  opacity: 0.85;
+  font-size: 1.265rem;
+  font-weight: bold;
+  background-color: #000000;
+  margin: 1rem;
+  border-radius: 5rem;
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: $user-font-family;
+  letter-spacing: 0.1rem;
+}
